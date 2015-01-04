@@ -1,0 +1,24 @@
+<link rel="import" href="../../packages/polymer/polymer.html">
+
+<link rel="import" href="../../packages/paper_elements/paper_icon_button.html">
+<link rel="import" href="../../packages/core_elements/core_toolbar.html">
+
+<link rel="import" href="../../packages/krong/component-toggler.html">
+
+<polymer-element name="app-titlebar">
+  <template>
+    <core-toolbar>
+      <component-toggler>
+      <div show>
+        <paper-icon-button id="navicon" icon="menu"></paper-icon-button>
+        <div flex> Title </div>
+        <paper-icon-button id="search" icon="search" on-tap={{searchTap}}></paper-icon-button>
+      </div>
+      <div hide>
+      </div>
+      </component-toggler>
+    </core-toolbar>
+  </template>
+  
+  <script type="application/dart" src="AppTitlebar.dart"></script>
+</polymer-element>

@@ -1,0 +1,47 @@
+<!--
+  Copyright (c) 2014, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../packages/polymer/polymer.html">
+
+<link rel="import" href="../../packages/core_elements/core_drawer_panel.html">
+<link rel="import" href="../../packages/core_elements/core_header_panel.html">
+<link rel="import" href="../../packages/core_elements/core_toolbar.html">
+<link rel="import" href="../../packages/core_elements/core_icon_button.html">
+<link rel="import" href="../../packages/core_elements/core_menu.html">
+
+<link rel="import" href="../../packages/paper_elements/paper_icon_button.html">
+<link rel="import" href="../../packages/paper_elements/paper_item.html">
+
+<link rel="import" href="../../packages/krong/app-menu.html">
+<link rel="import" href="../../packages/krong/app-titlebar.html">
+
+
+<polymer-element name="app-main">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    
+    <core-drawer-panel id="main-drawer-panel">
+      <core-header-panel mode="waterfall-tall" drawer>
+        <core-toolbar>
+          <div>Cebu Home Pages</div>
+        </core-toolbar>
+        <app-menu></app-menu>
+      </core-header-panel>
+      
+      <core-header-panel main>
+        <app-titlebar></app-titlebar>
+        
+        <div> CARDS GO HERE </div>
+      </core-header-panel>
+      
+    </core-drawer-panel>
+  </template>
+  <script type="application/dart" src="AppMain.dart"></script>
+</polymer-element>

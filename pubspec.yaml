@@ -1,0 +1,17 @@
+name: 'loopy'
+version: 0.0.1
+description: >
+  A simple shopping app for cream of the craft. made awesome with polymer.dart
+author: ninjapawikan <hello@iancabigon.me>
+homepage: https://iancabigon.me
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  polymer: '>=0.15.0 <0.16.0'
+  core_elements: '>=0.6.0+1 <0.7.0'
+  paper_elements: '>=0.6.0+4 <0.7.0'
+  
+transformers:
+- polymer:
+    entry_points: web/index.html
